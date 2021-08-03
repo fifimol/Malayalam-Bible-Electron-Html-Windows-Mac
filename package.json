@@ -1,14 +1,14 @@
 {
-  "name": "Malayalam-Bible-Edition-1910",
+  "name": "Malayalam-Bible",
   "version": "1.0.0",
-  "description": "Malayalam Bible Free 1910 Edition",
+  "description": "Malayalam Bible",
   "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make"
   },
-  "author": "Ebenezer Softwares",
+  "author": "fifimol",
   "license": "MIT",
   "devDependencies": {
     "electron-builder": "^22.11.7",
