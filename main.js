@@ -16,7 +16,7 @@ function createWindow() {
 
 const template = [
    {
-      label: 'Menu',
+      label: 'Edit',
       submenu: [
          {
             role: 'undo'
@@ -48,12 +48,6 @@ const template = [
          }
       ]
    },
-   {
-      label: 'Version',
-      submenu: [
-         {
-            role: 'undo'
-         },
    
 ]
 
