@@ -5,7 +5,8 @@ Desined to Work With Windows desktop
 Required electron,node js,Git desktop
 
 For installing
-Right click and open git bash in this folder
+Right click and open git bash in this folder.
+
 Type npm install
 
 Once installed 
