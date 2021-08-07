@@ -15,5 +15,7 @@ Type npm start
 
 To build exe
 
-Type npx run make
+npx electron-builder -w
+
+Thanks.
 
