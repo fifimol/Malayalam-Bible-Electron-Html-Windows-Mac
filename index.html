@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>ഉൽപത്തി 1</title>
+
+<script type='text/javascript' src='js/jquery-1.11.3.min.js'></script>
+
+<script type='text/javascript' src='js/jquery.tooltipster.min.js'></script>
+
+<script type='text/javascript' src='js/app-builder-footnotes.js'></script>
+<script type='text/javascript' src='js/app-builder-menus.js'></script>
+<script type='text/javascript' src='js/book-names.js'></script>
+
+<link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+<link rel="stylesheet" type="text/css" href="css/themes/tooltipster-shadow.css" />
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css" />
+
+<script type="text/javascript">
+
+// Audio
+$(window).load(function() {
+
+var pop = Popcorn("#audio");
+
+var timings = [
+    { label: "1", start: 6.3, end: 10.03 },
+    { label: "2", start: 10.28, end: 21.03 },
+    { label: "3", start: 21.28, end: 26.07 },
+    { label: "4", start: 26.32, end: 33.71 },
+    { label: "5", start: 33.96, end: 41.69 },
+    { label: "6", start: 41.94, end: 51.73 },
+    { label: "7", start: 51.98, end: 61.83 },
+    { label: "8", start: 62.08, end: 69.71 },
+    { label: "9", start: 69.96, end: 80.75 },
+    { label: "10", start: 81, end: 90.59 },
+    { label: "11", start: 90.84, end: 104.83 },
+    { label: "12", start: 105.08, end: 113.51 },
+    { label: "13", start: 113.76, end: 117.27 },
+    { label: "14", start: 117.52, end: 132.31 },
+    { label: "15", start: 132.56, end: 140.83 },
+    { label: "16", start: 141.08, end: 153.63 },
+    { label: "17", start: 153.88, end: 162.35 },
+    { label: "18", start: 162.6, end: 167.71 },
+    { label: "19", start: 167.96, end: 171.25 },
+    { label: "20", start: 171.5, end: 181.23 },
+    { label: "21", start: 181.48, end: 197.09 },
+    { label: "22", start: 197.34, end: 209.11 },
+    { label: "23", start: 209.36, end: 213.03 },
+    { label: "24", start: 213.28, end: 225.35 },
+    { label: "25", start: 225.6, end: 236.79 },
+    { label: "26", start: 237.04, end: 260.87 },
+    { label: "27", start: 261.12, end: 271.71 },
+    { label: "28", start: 271.96, end: 290.23 },
+    { label: "29", start: 290.48, end: 303.71 },
+    { label: "30", start: 303.96, end: 321.43 },
+    { label: "31", start: 321.68, end: 338.63 }
+];
+
+initAudioTimings(pop, timings);
+});
+
+$(document).ready(function() {
+// Audio start and stop times
+var startTime = 6.3;
+var stopTime  = 338.63;
+
+var audio = document.getElementById("audio");
+audio.addEventListener('canplaythrough', function() {
+   if (this.currentTime < startTime) {
+      this.currentTime = startTime;
+   }
+});
+
+audio.addEventListener('timeupdate', function() {
+   if (this.currentTime > stopTime) {
+      this.pause();
+      this.currentTime = startTime;
+   }
+});
+
+});
+
+// Chapters
+var chapters = [ { start: 1, end: 50 }];
+var hasIntro = false;
+var baseRef  = "mal-01-GEN-";
+
+
+</script>
+</head>
+
+<body class="browser" dir="ltr">
+
+<div id="book-menu"></div>
+<div id="chapter-menu"></div>
+
+<div id="toolbar-top">
+<div class="navigation-top">
+  <span class="button"><a href='' title='Click Here'>Previous Book</a></span>
+  <span class="button"><a href='' title='Click Here'>Previous Chapter</a></span>
+  <span id="book-selector"><a href="#" onclick="toggleBookMenu(); return false;">ഉൽപത്തി</a></span>
+<span id="chapter-selector"><a href="#" onclick="toggleChapterMenu(chapters, hasIntro, baseRef); return false;">1</a></span>
+  <span class="button"><a href='mal-01-GEN-002.html' title='Click Here'>Next Chapter</a></span>
+  <span class="button"><a href='mal-02-EXO-001.html' title='Click Here'>Next Book</a></span>
+</div>
+</div>
+
+<div id="content">
+
+<div class="mt"><span class="mt">ഉൽപത്തി</span></div>
+<div class="b"></div>
+<div class="b"></div>
+<div class="c"><span class="c">1</span></div> <a id="v1"></a>
+<div class="p"><div id="T1" class="aud"><sup><span class="v">1</span></sup><span class="vsp">&nbsp;</span>ആദിയിൽ ദൈവം ആകാശവും ഭൂമിയും സൃഷ്ടിച്ചു.</div> <a id="v2"></a><div id="T2" class="aud"><sup><span class="v">2</span></sup><span class="vsp">&nbsp;</span>ഭൂമി പാഴായും ശൂന്യമായും ഇരുന്നു; ആഴത്തിന്മീതെ ഇരുൾ ഉണ്ടായിരുന്നു. ദൈവത്തിന്റെ ആത്മാവു വെള്ളത്തിൻ മീതെ പരിവർത്തിച്ചുകൊണ്ടിരുന്നു.</div> <a id="v3"></a><div id="T3" class="aud"><sup><span class="v">3</span></sup><span class="vsp">&nbsp;</span>വെളിച്ചം ഉണ്ടാകട്ടെ  എന്നു ദൈവം കല്പിച്ചു; വെളിച്ചം ഉണ്ടായി.</div> <a id="v4"></a><div id="T4" class="aud"><sup><span class="v">4</span></sup><span class="vsp">&nbsp;</span>വെളിച്ചം നല്ലതു എന്നു ദൈവം കണ്ടു ദൈവം വെളിച്ചവും ഇരുളും തമ്മിൽ വേർപിരിച്ചു.</div> <a id="v5"></a><div id="T5" class="aud"><sup><span class="v">5</span></sup><span class="vsp">&nbsp;</span>ദൈവം വെളിച്ചത്തിന്നു പകൽ എന്നും ഇരുളിന്നു രാത്രി എന്നും പേരിട്ടു. സന്ധ്യയായി ഉഷസ്സുമായി, ഒന്നാം ദിവസം.</div> <a id="v6"></a><div id="T6" class="aud"><sup><span class="v">6</span></sup><span class="vsp">&nbsp;</span>ദൈവം വെള്ളങ്ങളുടെ മദ്ധ്യേ ഒരു വിതാനം ഉണ്ടാകട്ടെ; അതു വെള്ളത്തിന്നും വെള്ളത്തിന്നും തമ്മിൽ വേർപിരിവായിരിക്കട്ടെ എന്നു കല്പിച്ചു.</div> <a id="v7"></a><div id="T7" class="aud"><sup><span class="v">7</span></sup><span class="vsp">&nbsp;</span>വിതാനം ഉണ്ടാക്കീട്ടു ദൈവം വിതാനത്തിൻ കീഴുള്ള വെള്ളവും വിതാനത്തിൻ മീതെയുള്ള വെള്ളവും തമ്മിൽ വേർപിരിച്ചു; അങ്ങനെ സംഭവിച്ചു.</div> <a id="v8"></a><div id="T8" class="aud"><sup><span class="v">8</span></sup><span class="vsp">&nbsp;</span>ദൈവം വിതാനത്തിന്നു ആകാശം എന്നു പേരിട്ടു. സന്ധ്യയായി ഉഷസ്സുമായി, രണ്ടാം ദിവസം.</div> <a id="v9"></a><div id="T9" class="aud"><sup><span class="v">9</span></sup><span class="vsp">&nbsp;</span>ദൈവം: ആകാശത്തിൻ കീഴുള്ള വെള്ളം ഒരു സ്ഥലത്തു കൂടട്ടെ; ഉണങ്ങിയ നിലം കാണട്ടെ എന്നു കല്പിച്ചു; അങ്ങനെ സംഭവിച്ചു.</div> <a id="v10"></a><div id="T10" class="aud"><sup><span class="v">10</span></sup><span class="vsp">&nbsp;</span>ഉണങ്ങിയ നിലത്തിന്നു ദൈവം ഭൂമി എന്നും വെള്ളത്തിന്റെ കൂട്ടത്തിന്നു സമുദ്രം എന്നും പേരിട്ടു; നല്ലതു എന്നു ദൈവം കണ്ടു.</div> <a id="v11"></a><div id="T11" class="aud"><sup><span class="v">11</span></sup><span class="vsp">&nbsp;</span>ഭൂമിയിൽനിന്നു പുല്ലും വിത്തുള്ള സസ്യങ്ങളും ഭൂമിയിൽ അതതു തരം വിത്തുള്ള ഫലം കായിക്കുന്ന വൃക്ഷങ്ങളും മുളെച്ചുവരട്ടെ എന്നു ദൈവം കല്പിച്ചു; അങ്ങനെ സംഭവിച്ചു.</div> <a id="v12"></a><div id="T12" class="aud"><sup><span class="v">12</span></sup><span class="vsp">&nbsp;</span>ഭൂമിയിൽനിന്നു പുല്ലും അതതു തരം വിത്തുള്ള ഫലം കായിക്കുന്ന വൃക്ഷങ്ങളും മുളെച്ചുവന്നു; നല്ലതു എന്നു ദൈവം കണ്ടു.</div> <a id="v13"></a><div id="T13" class="aud"><sup><span class="v">13</span></sup><span class="vsp">&nbsp;</span>സന്ധ്യയായി ഉഷസ്സുമായി, മൂന്നാം ദിവസം.</div> <a id="v14"></a><div id="T14" class="aud"><sup><span class="v">14</span></sup><span class="vsp">&nbsp;</span>പകലും രാവും തമ്മിൽ വേർപിരിവാൻ ആകാശവിതാനത്തിൽ വെളിച്ചങ്ങൾ ഉണ്ടാകട്ടെ; അവ അടയാളങ്ങളായും കാലം, ദിവസം, സംവത്സരം എന്നിവ തിരിച്ചറിവാനായും ഉതകട്ടെ;</div> <a id="v15"></a><div id="T15" class="aud"><sup><span class="v">15</span></sup><span class="vsp">&nbsp;</span>ഭൂമിയെ പ്രകാശിപ്പിപ്പാൻ ആകാശവിതാനത്തിൽ അവ വെളിച്ചങ്ങളായിരിക്കട്ടെ എന്നു ദൈവം കല്പിച്ചു; അങ്ങനെ സംഭവിച്ചു.</div> <a id="v16"></a><div id="T16" class="aud"><sup><span class="v">16</span></sup><span class="vsp">&nbsp;</span>പകൽ വാഴേണ്ടതിന്നു വലിപ്പമേറിയ വെളിച്ചവും രാത്രി വാഴേണ്ടതിന്നു വലിപ്പം കുറഞ്ഞ വെളിച്ചവും ആയി രണ്ടു വലിയ വെളിച്ചങ്ങളെ ദൈവം ഉണ്ടാക്കി; നക്ഷത്രങ്ങളെയും ഉണ്ടാക്കി.</div> <a id="v17"></a><div id="T17" class="aud"><sup><span class="v">17</span></sup><span class="vsp">&nbsp;</span>ഭൂമിയെ പ്രകാശിപ്പിപ്പാനും പകലും രാത്രിയും വാഴുവാനും വെളിച്ചത്തെയും ഇരുളിനെയും തമ്മിൽ വേർപിരിപ്പാനുമായി</div> <a id="v18"></a><div id="T18" class="aud"><sup><span class="v">18</span></sup><span class="vsp">&nbsp;</span>ദൈവം അവയെ ആകാശവിതാനത്തിൽ നിർത്തി; നല്ലതു എന്നു ദൈവം കണ്ടു.</div> <a id="v19"></a><div id="T19" class="aud"><sup><span class="v">19</span></sup><span class="vsp">&nbsp;</span>സന്ധ്യയായി ഉഷസ്സുമായി, നാലാം ദിവസം.</div> <a id="v20"></a><div id="T20" class="aud"><sup><span class="v">20</span></sup><span class="vsp">&nbsp;</span>വെള്ളത്തിൽ ജലജന്തുക്കൾ കൂട്ടമായി ജനിക്കട്ടെ; ഭൂമിയുടെ മീതെ ആകാശവിതാനത്തിൽ പറവജാതി പറക്കട്ടെ എന്നു ദൈവം കല്പിച്ചു.</div> <a id="v21"></a><div id="T21" class="aud"><sup><span class="v">21</span></sup><span class="vsp">&nbsp;</span>ദൈവം വലിയ തിമിംഗലങ്ങളെയും വെള്ളത്തിൽ കൂട്ടമായി ജനിച്ചു ചരിക്കുന്ന അതതുതരം ജീവജന്തുക്കളെയും അതതു തരം പറവജാതിയെയും സൃഷ്ടിച്ചു; നല്ലതു എന്നു ദൈവം കണ്ടു.</div> <a id="v22"></a><div id="T22" class="aud"><sup><span class="v">22</span></sup><span class="vsp">&nbsp;</span>നിങ്ങൾ വർദ്ധിച്ചു പെരുകി സമുദ്രത്തിലെ വെള്ളത്തിൽ നിറവിൻ; പറവജാതി ഭൂമിയിൽ പെരുകട്ടെ എന്നു കല്പിച്ചു ദൈവം അവയെ അനുഗ്രഹിച്ചു.</div> <a id="v23"></a><div id="T23" class="aud"><sup><span class="v">23</span></sup><span class="vsp">&nbsp;</span>സന്ധ്യയായി ഉഷസ്സുമായി, അഞ്ചാം ദിവസം.</div> <a id="v24"></a><div id="T24" class="aud"><sup><span class="v">24</span></sup><span class="vsp">&nbsp;</span>അതതുതരം കന്നുകാലി, ഇഴജാതി, കാട്ടുമൃഗം ഇങ്ങനെ അതതു തരം ജീവജന്തുക്കൾ ഭൂമിയിൽനിന്നു ഉളവാകട്ടെ എന്നു ദൈവം കല്പിച്ചു; അങ്ങനെ സംഭവിച്ചു.</div> <a id="v25"></a><div id="T25" class="aud"><sup><span class="v">25</span></sup><span class="vsp">&nbsp;</span>ഇങ്ങനെ ദൈവം അതതു തരം കാട്ടുമൃഗങ്ങളെയും അതതു തരം കന്നുകാലികളെയും അതതു തരം ഭൂചരജന്തുക്കളെയും ഉണ്ടാക്കി; നല്ലതു എന്നു ദൈവം കണ്ടു.</div> <a id="v26"></a><div id="T26" class="aud"><sup><span class="v">26</span></sup><span class="vsp">&nbsp;</span>അനന്തരം ദൈവം: നാം നമ്മുടെ സ്വരൂപത്തിൽ നമ്മുടെ സാദൃശ്യപ്രകാരം മനുഷ്യനെ ഉണ്ടാക്കുക; അവർ സമുദ്രത്തിലുള്ള മത്സ്യത്തിന്മേലും ആകാശത്തിലുള്ള പറവജാതിയിന്മേലും മൃഗങ്ങളിന്മേലും സർവ്വഭൂമിയിന്മേലും ഭൂമിയിൽ ഇഴയുന്ന എല്ലാ ഇഴജാതിയിന്മേലും വാഴട്ടെ എന്നു കല്പിച്ചു.</div> <a id="v27"></a><div id="T27" class="aud"><sup><span class="v">27</span></sup><span class="vsp">&nbsp;</span>ഇങ്ങനെ ദൈവം തന്റെ സ്വരൂപത്തിൽ മനുഷ്യനെ സൃഷ്ടിച്ചു, ദൈവത്തിന്റെ സ്വരൂപത്തിൽ അവനെ സൃഷ്ടിച്ചു, ആണും പെണ്ണുമായി അവരെ സൃഷ്ടിച്ചു.</div> <a id="v28"></a><div id="T28" class="aud"><sup><span class="v">28</span></sup><span class="vsp">&nbsp;</span>ദൈവം അവരെ അനുഗ്രഹിച്ചു: നിങ്ങൾ സന്താനപുഷ്ടിയുള്ളവരായി പെരുകി ഭൂമിയിൽ നിറഞ്ഞു അതിനെ അടക്കി സമുദ്രത്തിലെ മത്സ്യത്തിന്മേലും ആകാശത്തിലെ പറവജാതിയിന്മേലും സകലഭൂചരജന്തുവിന്മേലും വാഴുവിൻ എന്നു അവരോടു കല്പിച്ചു.</div> <a id="v29"></a><div id="T29" class="aud"><sup><span class="v">29</span></sup><span class="vsp">&nbsp;</span>ഭൂമിയിൽ എങ്ങും വിത്തുള്ള സസ്യങ്ങളും വൃക്ഷത്തിന്റെ വിത്തുള്ള ഫലം കായിക്കുന്ന സകലവൃക്ഷങ്ങളും ഇതാ, ഞാൻ നിങ്ങൾക്കു തന്നിരിക്കുന്നു; അവ നിങ്ങൾക്കു ആഹാരമായിരിക്കട്ടെ;</div> <a id="v30"></a><div id="T30" class="aud"><sup><span class="v">30</span></sup><span class="vsp">&nbsp;</span>ഭൂമിയിലെ സകലമൃഗങ്ങൾക്കും ആകാശത്തിലെ എല്ലാ പറവകൾക്കും ഭൂമിയിൽ ചരിക്കുന്ന സകല ഭൂചരജന്തുക്കൾക്കും ആഹാരമായിട്ടു പച്ചസസ്യം ഒക്കെയും ഞാൻ കൊടുത്തിരിക്കുന്നു എന്നു ദൈവം കല്പിച്ചു; അങ്ങനെ സംഭവിച്ചു.</div> <a id="v31"></a><div id="T31" class="aud"><sup><span class="v">31</span></sup><span class="vsp">&nbsp;</span>താൻ  ഉണ്ടാക്കിയതിനെ ഒക്കെയും ദൈവം നോക്കി, അതു എത്രയും നല്ലതു എന്നു കണ്ടു. സന്ധ്യയായി ഉഷസ്സുമായി, ആറാം ദിവസം.</div></div>
+</div>
+
+
+</div>
+</div>
+
+</body>
+</html>
